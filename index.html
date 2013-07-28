@@ -1,0 +1,309 @@
+<!DOCTYPE html>
+<!--[if lt IE 7 ]><html class="ie ie6" lang="en"> <![endif]-->
+<!--[if IE 7 ]><html class="ie ie7" lang="en"> <![endif]-->
+<!--[if IE 8 ]><html class="ie ie8" lang="en"> <![endif]-->
+<!--[if (gte IE 9)|!(IE)]><!--><html lang="en"> <!--<![endif]-->
+<head>
+	<meta charset="utf-8">
+	<meta name="description" content="">
+	<meta name="author" content="">
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+	<!-- <link rel="stylesheet" href="stylesheets/base.css"> -->
+	<link rel="stylesheet" href="stylesheets/skeleton.css">
+	<!-- <link rel="stylesheet" href="stylesheets/layout.css"> -->
+
+	<!--[if lt IE 9]>
+		<script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
+	<![endif]-->
+
+	<style>
+	.clearfix:after {
+		clear: both;
+		content: ' ';
+		display: block;
+		font-size: 0;
+		line-height: 0;
+		visibility: hidden;
+		width: 0;
+		height: 0;
+	}
+
+	.clearfix {
+		display: inline-block;
+	}
+
+	* html .clearfix {
+		height: 1%;
+	}
+
+	.clearfix {
+		display: block;
+	}
+
+	.block-x1 {
+		height: 150px;
+	}	
+	.block-1x1 {
+		height: 150px;
+	}
+
+	.block-2x1 {
+		height: 150px;
+		/*width: 312px;*/
+	}
+	.block-2x2 {
+		height: 312px;
+		/*width: 312px;*/
+	}
+	.block-2x3 {
+		/*width: 312px;*/
+		height: 475px;
+	}
+
+	.block-4x4 {
+		height: 636px;
+		/*width: 636px;*/
+	}
+
+	.block-4x2 {
+		height: 312px;
+	}
+
+	.block-4x6 {
+		height: 960px;
+	}
+
+	.block-4x2 {
+		height: 312px;
+	}
+
+	.block-x3 {
+		height: 475px;
+	}
+
+	.block-6x2 {
+		height: 312px;
+	}
+
+	.block-x6 {
+		height: 960px;
+	}
+
+	.block {
+		width: 100%;
+		float: left;
+		clear: both;
+		position: relative;
+		margin-top: 12px;
+		background-color: #C0C0C0;
+		font-size: 15px;
+		text-align: center;
+		line-height: 350px;
+	}
+
+	.block.block-1x1, .block.block-2x1 {
+		line-height: 120px;
+	}
+	</style>
+</head>
+<body>
+	<!-- Layout test
+	================================================== -->
+	<div class="container">
+		<div class="row">
+			<div class="two columns alpha">
+				<div class="block block-2x2">1</div>
+				<div class="block block-2x2">2</div>
+			</div>
+			<div class="four columns omega">
+				<div class="block block-4x4">3</div>
+			</div>
+		</div>
+		<div class="row">
+			<div class="four columns alpha">
+				<div class="block block-4x4">4</div>
+				<div class="row">
+					<div class="two columns alpha">
+						<div class="block block-2x2">5</div>
+					</div>
+					<div class="two columns omega">
+						<div class="block block-2x2">6</div>
+					</div>
+				</div>
+			</div>
+			<div class="two columns omega">
+				<div class="block block-2x3">7</div>
+				<div class="block block-2x3">8</div>
+			</div>
+		</div>
+	</div>
+
+	<div class="container">
+		<div class="row">
+			<div class="four columns alpha">
+				<div class="block block-4x6">1</div>
+			</div>
+			<div class="two columns omega">
+				<div class="row">
+					<div class="block block-2x2">2</div>
+				</div>
+				<div class="row">
+					<div class="block block-2x2">3</div>
+				</div>
+				<div class="row">
+					<div class="block block-2x2">4</div>
+				</div>
+			</div>
+		</div>
+		<div class="row">
+			<div class="four columns alpha">
+				<div class="row">
+					<div class="one column alpha">
+						<div class="block block-1x1">5</div>
+					</div>
+					<div class="one column">
+						<div class="block block-1x1">6</div>
+					</div>
+					<div class="one column">
+						<div class="block block-1x1">7</div>
+					</div>
+					<div class="one column omega">
+						<div class="block block-1x1">8</div>
+					</div>
+				</div>
+				<div class="block block-4x2">9</div>
+			</div>
+			<div class="two columns omega">
+				<div class="block block-2x2">10</div>
+				<div class="row">
+					<div class="one column alpha">
+						<div class="block block-1x1">11</div>
+					</div>
+					<div class="one column omega">
+						<div class="block block-1x1">12</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<div class="container">
+		<div class="row">
+			<div class="four columns alpha">
+				<div class="block block-4x2">1</div>
+			</div>
+			<div class="two columns omega no-tablet">
+				<div class="block block-2x2">2</div>
+			</div>
+		</div>
+		<div class="row">
+			<div class="two columns alpha">
+				<div class="block block-2x2">3</div>
+			</div>
+			<div class="two columns no-tablet">
+				<div class="block block-2x2">4</div>
+			</div>
+			<div class="two columns omega">
+				<div class="block block-2x2">5</div>
+			</div>
+		</div>
+		<div class="row">
+			<div class="four columns alpha">
+				<div class="block block-4x4">6</div>
+			</div>
+			<div class="two columns omega">
+				<div class="row">
+					<div class="one column alpha">
+						<div class="block block-1x1">7</div>
+					</div>
+					<div class="one column omega">
+						<div class="block block-1x1">8</div>
+					</div>
+				</div>
+				<div class="row">
+					<div class="block block-2x1">9
+					</div>
+				</div>
+				<div class="row">
+					<div class="block block-2x2 no-tablet">10
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<div class="container">
+		<div class="row">
+			<div class="columns six alpha omega">
+				<div class="block block-6x2">1</div>
+			</div>
+		</div>
+		<div class="row">
+			<div class="columns one alpha">
+				<div class="block block-1x1">2</div>
+			</div>
+			<div class="columns one">
+				<div class="block block-1x1">3</div>
+			</div>
+			<div class="columns one">
+				<div class="block block-1x1">4</div>
+			</div>
+			<div class="columns one">
+				<div class="block block-1x1">5</div>
+			</div>
+			<div class="columns one">
+				<div class="block block-1x1">6</div>
+			</div>
+			<div class="columns one omega">
+				<div class="block block-1x1">7</div>
+			</div>
+		</div>
+		<div class="row">
+			<div class="columns two alpha">
+				<div class="row">
+					<div class="columns one alpha">
+						<div class="block block-1x1">8</div>
+					</div>
+					<div class="columns one omega">
+						<div class="block block-1x1">9</div>
+					</div>
+				</div>
+				<div class="row">
+					<div class="columns two alpha omega">
+						<div class="block block-2x1">10</div>
+					</div>
+				</div>
+			</div>
+			<div class="columns four omega">
+				<div class="row">
+					<div class="columns two alpha">
+						<div class="block block-2x2">11</div>
+					</div>
+					<div class="columns two omega">
+						<div class="block block-2x2">12</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="row">
+			<div class="columns two alpha">
+				<div class="block block-2x1">13</div>
+				<div class="block block-2x2">14</div>
+				<div class="block block-2x2">15</div>
+			</div>
+			<div class="columns four omega">
+				<div class="block block-4x4">16</div>
+				<div class="row">
+					<div class="columns two alpha">
+						<div class="block block-2x1">17</div>
+					</div>
+					<div class="columns two omega">
+						<div class="block block-2x1">18</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+
+</body>
+</html>
